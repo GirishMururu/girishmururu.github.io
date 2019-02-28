@@ -1,0 +1,194 @@
+html, body {
+  height: 100%;
+  margin: 0px;
+  padding: 0px;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body{
+
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 14px;
+    line-height: 1.42857143;
+    color: #333;
+}
+
+div{
+    display: block;
+}
+.header{
+    background: white;/*#ECF3F2;/*#FDFEF1;/* #F8FDFE;*/
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 5px 0px;
+    height: 60px;
+}
+
+.container{
+    position: relative;
+    /*padding-right: 15px;
+    padding-left: 15px;*/
+    width: 60%;
+    margin-right: auto;
+    margin-left: auto;
+}
+
+.gm-logo {
+    background: rgba(0,0,0,0) url(assets/girishmururu.png) center left no-repeat;
+    /*background-size: 100%;*/
+    width: 250px;
+    height: 70px;
+}
+.extra-nav {
+    position: absolute;
+    right: 15px;
+    top: 13px;
+}
+
+.extra-nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+
+.extra-nav ul li {
+    float: left;
+    text-align: center;
+}
+
+.extra-nav ul li a {
+    text-decoration: none;
+    display: block;
+    color: #a5cdff;
+    padding: 4px;
+    cursor: pointer;
+}
+
+.extra-nav ul li a:hover:not(.active) { background: non-transparent; }
+
+/*
+a {
+    background-color: transparent;
+}
+
+a:-webkit-any-link {
+    cursor: pointer;
+}
+
+.extra-nav ul li a i {
+    font-size: 32px;
+}
+
+.fa {
+    display: inline-block;
+    font: normal normal normal 14px/1 FontAwesome;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+}
+
+.fa-twitter-square:before{
+    content: "\f081";
+    width: 80px;
+    height: 80px;
+}
+
+.fa-facebook-square:before{
+    content: "\f082";
+    width: 80px;
+    height: 80px;
+}
+*/
+
+.fb-logo {
+    background: rgba(0,0,0,0) url(assets/fb.png) center left no-repeat;
+    /*background-size: 100%;*/
+    width: 15px;
+    height: 30px;
+}
+
+.twitter-logo {
+    background: rgba(0,0,0,0) url(assets/twitter.png) center left no-repeat;
+    /*background-size: 100%;*/
+    width: 20px;
+    height: 30px;
+}
+
+#primary-nav {
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 5px 0px;
+}
+
+ul.nav {
+    background: none;
+    list-style-type: none;
+    overflow: hidden;
+}
+
+ul.nav li { float: left; }
+
+ul.nav li a {
+    display: block;
+    color: grey;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+
+ul.nav li a:hover:not(.active) { background: #F1F7F6; }
+
+ul.nav li a.active { background: #ECF3F2; }
+
+#main-content {
+    /*background: #EEEEEE;*/
+    background: white;/* #ECF3F2;/*#FDFEF1;/*#F8FDFE;*/
+    box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 5px 0px;
+    /*height: 100%;*/
+    padding-bottom: 15px;
+    display: table;
+    /*display: flex;*/
+}
+
+.col {
+    position: relative;
+    min-height: 1px;
+    padding-right: 15px;
+    padding-left: 15px;
+    padding-top: 15px;
+    float: left;
+    padding-bottom: 15px;
+}
+
+.row {
+    margin-right: -15px;
+    margin-left: -15px;
+}
+
+h2, h3, h4{
+    margin-top: 10px;
+    margin-bottom: -10px;
+    font-size: 15px;
+    color: darkgreen;
+    padding-left: 15px;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

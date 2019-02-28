@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<!-- I am gonna develop my site from scratch by learning from sites and will 
+add my own css. Good Luck!! I need it. -->
+    <head>
+        <meta charset="utf-8">
+        <title>Girish Mururu</title>
+        <link rel="stylesheet" type="text/css" href="../style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Girish Mururu">
+    </head>
+    <body>
+        <div class="header hidden-xs">
+            <div class="container">
+                <div class="gm-logo"><a href="../index.html"></a></div>
+                <div class="extra-nav">
+                <ul>
+                    <li ><a class="fb-logo" href="https://www.facebook.com/mururugirish"></a></li>
+                    <li ><a class="twitter-logo" href="https://twitter.com/MuroorGirish"></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="primary-nav">
+            <nav>
+                <ul class="nav">
+                    <li><a href="../index.html">Home</a></li>
+                    <!--<li><a href="projects.html">Projects</a></li>-->
+                    <li><a class="active" href="#">Publications</a></li>
+                    <li><a href="../assets/Girish_Mururu_CV.pdf">C.V.</a></li>
+                    <li><a href="http://shunyajnana.weebly.com/">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- main content -->
+        <div class="container" id="main-content">
+             <h2>Preprint</h2>
+             <div class="col">
+                <div style="margin-top: 1em;">
+                    <a href="https://arxiv.org/abs/1902.06570"><img width="16" src="../assets/arxiv.png" alt="" /></a>
+                    <span onclick="toggle('https://arxiv.org/abs/1902.06570')"
+                          title="
+                            Modern software systems heavily use C/C++ based libraries.
+                            Because of the weak memory model of C/C++, libraries may suffer from
+                            vulnerabilities which can expose the applications to potential attacks. For example, a very
+                            large number of return oriented programming gadgets exist in glibc that allow
+                            stitching together semantically valid but malicious Turing-complete programs.
+                            In spite of significant advances in attack detection and
+                            mitigation, full defense is unrealistic against an ever-growing set of
+                            possibilities for generating such malicious programs.
+
+                            In this work, we create a defense mechanism by debloating
+                            libraries to reduce the dynamic functions linked so that the possibilities of
+                            constructing malicious programs diminishes significantly. The key idea
+                            is to locate each library call site within an application, and in each
+                            case to load only the set of library functions that will be used at that
+                            call site. This approach of demand-driven loading relies on an
+                            input-aware oracle that predicts a near-exact set of library functions
+                            needed at a given call site during the execution. The predicted
+                            functions are loaded just in time, and the complete call
+                            chain (of function bodies) inside the library  is purged
+                            after returning from the library call back into the application.
+                            We present a decision-tree based predictor, which acts as an
+                            oracle, and an optimized runtime system, which works directly
+                            with library binaries like GNU libc and libstdc++. We show
+                            that on average, the proposed scheme cuts the exposed code surface of libraries
+                            by 97.2%, reduces ROP gadgets present in linked libraries by 97.9%,
+                            achieves a prediction accuracy in most cases of at least 97%, and adds a
+                            small runtime overhead of 18% on all libraries (16% for glibc, 2% for others)
+                            across all benchmarks of SPEC 2006, suggesting this scheme is practical.">
+                        <a>
+                            <span style="font-size: 100%">
+                                Binary Debloating for Security via Demand Driven Loading
+                            </span>
+                        </a>
+                    </span>
+                    <br />
+                      Girish Mururu*, Christopher Porter*, Prithayan Barua, and Santosh Pande
+                    </br>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+            <hr style="width: 100%; color: black; height: 1px; background_color: black;">
+            <h4>Conference Papers</h4>
+            <div class="col">
+                <div style="margin-top: 1em;">
+                    <a href="../papers/gstm/gstm.pdf"><img width="16" src="../assets/pdf.png" alt="" /></a>
+                    <a href="../papers/gstm/CGO-gstm.pptx"><img width="16" src="../assets/ppt.png" alt="" /></a>
+                    <a href=""><img width="16" src="../assets/bib.png" alt="" /></a>
+                    <span onclick="toggle('../papers/gstm/gstm.pdf')"
+                          title="Simplified parallel programming coupled with an
+                           ability to express speculative computation is realized
+                           with Software Transactional Memory (STM). Although STMs
+                           are gaining popularity because of significant improvements
+                           in parallel performance, they exhibit enormous variation
+                           in transaction execution with non-repeatable performance
+                           behavior which is unacceptable in many application domains,
+                           especially in which frame rates and responsiveness should
+                           be predictable.In other domains reproducible transactional
+                           behavior helps towards system provisioning. Thus, reducing
+                           execution variance in STM is an important performance goal
+                           that has been mostly overlooked.
+                           In this work, we minimize the variance in execution time
+                           of threads in STM by reducing non-determinism exhibited
+                           due to speculation. We define the state of STM, and we
+                           use it to first quantify non-determinism and then generate
+                           an automaton that models the execution behavior of threads
+                           in STM. We finally use the state automaton to guide the STM
+                           to avoid non-predictable transactional behavior thus reducing
+                           non-determinism in rollbacks which in turn results in reduction
+                           in variance. We observed average reduction of variance in execution
+                           time of threads up to 74% in 16 cores and 53% in 8 cores by reducing
+                           non-determinism up to 24% in 16 cores and 44% in 8 cores, respectively,
+                           on STAMP benchmark suite while experiencing average slowdown of 4.8% in
+                           8 cores and 19.2% in 16 cores. We also reduced the variance in frame
+                           rate by maximum of 65% on a version of real world game
+                           Quake3 without degradation in timing.">
+                        <a>
+                            <span style="font-size: 100%">
+                                Quantifying and Reducing Execution Variance in STM via Model Driven Commit Optimization
+                            </span>
+                        </a>
+                    </span>
+                    <br />
+                      Girish Mururu, Ada Gavrilovska, and Santosh Pande<br />
+                      <b>CGO 2019, Washington D.C.</b>
+                </div>
+                <div style="margin-top: 1em;">
+                    <a href="../papers/gstm_poster/gstm.pdf"><img width="16" src="../assets/pdf.png" alt="" /></a>
+                    <a href="../papers/gstm_poster/reference.bib"><img width="16" src="../assets/bib.png" alt="" /></a>
+                    <span onclick="toggle('../papers/gstm_poster/gstm.pdf')"
+                          title="Simplified parallel programming coupled with an
+                           ability to express speculative computation is realized
+                           with Software Transactional Memory (STM). Although STMs
+                           are gaining popularity because of significant improvements
+                           in parallel performance, they exhibit enormous variation
+                           in transaction execution with non-repeatable performance
+                           behavior which is unacceptable in many application domains,
+                           especially in which frame rates and responsiveness should
+                           be predictable.In other domains reproducible transactional
+                           behavior helps towards system provisioning. Thus, reducing
+                           execution variance in STM is an important performance goal
+                           that has been mostly overlooked.
+                           In this work, we minimize the variance in execution time
+                           of threads in STM by reducing non-determinism exhibited
+                           due to speculation. We define the state of STM, and we
+                           use it to first quantify non-determinism and then generate
+                           an automaton that models the execution behavior of threads
+                           in STM. We finally use the state automaton to guide the STM
+                           to avoid non-predictable transactional behavior thus reducing
+                           non-determinism in rollbacks which in turn results in reduction
+                           in variance. We observed average reduction of variance in execution
+                           time of threads up to 74% in 16 cores and 53% in 8 cores by reducing
+                           non-determinism up to 24% in 16 cores and 44% in 8 cores, respectively,
+                           on STAMP benchmark suite while experiencing average slowdown of 4.8% in
+                           8 cores and 19.2% in 16 cores. We also reduced the variance in frame
+                           rate by maximum of 65% on a version of real world game
+                           Quake3 without degradation in timing.">
+                        <a>
+                            <span style="font-size: 100%">
+                                Quantifying and Reducing Execution Variance in STM via Model Driven Commit Optimization (Poster)
+                            </span>
+                        </a>
+                    </span>
+                    <br />
+                      Girish Mururu, Ada Gavrilovska, and Santosh Pande<br />
+                      <b>PPOPP 2018, Vienna, Austria</b>
+                </div>
+                <div style="margin-top: 1em;">
+                    <a href="../papers/transformers/transformers.pdf"><img width="16" src="../assets/pdf.png" alt="" /></a>
+                    <span onclick="toggle('../papers/transformers/transformers.pdf')"
+                          >
+                        <a>
+                            <span style="font-size: 100%">
+                                Transformers: the Advent of Dark Silicon
+                            </span>
+                        </a>
+                    </span>
+                    <br />
+                      *Anshul Bansal and *Girish Mururu
+                    <br>
+                      <b>Pact 2015, California, USA</b>
+                </div>
+            </div>
+            <div class="row">
+            </div>
+        </div>
+    </body>
+</html>

@@ -1,99 +1,89 @@
 <!DOCTYPE html>
-<html>
-	<head>
-		<title>Girish Mururu</title>
-		<!-- link to main stylesheet -->
-		<link rel="stylesheet" type="text/css" href="/css/main.css">
-	</head>
-	<body>
-          <!-- Uses a transparent header that draws on top of the layout's background -->
-<style>
-.demo-layout-transparent {
-  background: url('assets/img/Atlantis.jpg') center / cover;
-}
-.demo-layout-transparent .mdl-layout__header,
-.demo-layout-transparent .mdl-layout__drawer-button {
-  /* This background is dark, so we set text to white. Use 87% black instead if
-     your background is light. */
-  color: white;
-}
-</style>
-
-<div class="demo-layout-transparent mdl-layout mdl-js-layout">
-  <header class="mdl-layout__header mdl-layout__header--transparent">
-    <div class="mdl-layout__header-row">
-      <!-- Title -->
-      <span class="mdl-layout-title">Girish Mururu</span>
-      <!-- Add spacer, to align navigation to the right -->
-      <div class="mdl-layout-spacer"></div>
-      <!-- Navigation -->
-      <nav class="mdl-navigation">
-        <a class="mdl-navigation__link" href="">Home</a>
-        <a class="mdl-navigation__link" href="">About</a>
-        <a class="mdl-navigation__link" href="">CV</a>
-        <a class="mdl-navigation__link" href="">Blog</a>
-      </nav>
-    </div>
-  </header>
-  <div class="mdl-layout__drawer">
-    <span class="mdl-layout-title">Girish Mururu</span>
-    <nav class="mdl-navigation">
-      <a class="mdl-navigation__link" href="">Home</a>
-      <a class="mdl-navigation__link" href="">About</a>
-      <a class="mdl-navigation__link" href="">CV</a>
-      <a class="mdl-navigation__link" href="">Blog</a>
-    </nav>
-  </div>
-  <main class="mdl-layout__content">
-    <div class="page-content"><!-- Your content goes here -->
-      <h1>Hi there, I'm Girish Mururu!</h1>
-	<p>I'm a graduate student pursuing PhD in computer science at Georgia Institute of Technology. 
-	My advisor is Professor Santosh Pande. I am interested in Science in general and right now my research is focussed on compilers, systems, parallel machines and their interoperability. 
-	  Outside of academics i like to travel, play sports, watch anime.
-          <a href="/about">Read more about my life...</a></p>
-</div>
-  </main>
-</div>
-
-<!--
-		<nav>
-    		<ul>
-        		<li><a href="/">Home</a></li>
-	        	<li><a href="/about">About</a></li>
-        		<li><a href="/cv">CV</a></li>
-        		<li><a href="/blog">Blog</a></li>
-    		</ul>
-		</nav>
-		<div class="container">
-    		<div class="blurb">
-        		<h1>Hi there, I'm Girish Mururu!</h1>
-				<p>I'm a graduate student pursuing PhD in computer science at Georgia Institute of Technology. 
-				My advisor is Professor Santosh Pande. I am interested in Science in general and right now my research is focussed on compilers, systems, parallel machines and their interoperability. 
-				Outside of academics i like to travel, play sports, watch anime.<a href="/about">Read more about my life...</a></p>
-    		</div><!-- /.blurb -->
-<!--		</div><!-- /.container -->
-		<footer>
-    		<ul>
-        		<li><a href="mailto:girishmurore@gmail.com">email</a></li>
-        		<li><a href="https://github.com/GirishMururu">github.com/GirishMururu</a></li>
-			</ul>
-                
-        <ul>
-          <li class="mdl-mini-footer--social-btn">
-            <a href="https://twitter.com/googledesign" class="social-btn social-btn__twitter" role="button" title="Twitter"></a>
-          </li>
-          <li class="mdl-mini-footer--social-btn">
-            <a href="https://github.com/google/material-design-lite" class="social-btn social-btn__github" role="button" title="GitHub"></a>
-          </li>
-          <li class="mdl-mini-footer--social-btn">
-            <a href="https://plus.google.com/+googledesign" class="social-btn social-btn__gplus" role="button" title="Google+"></a>
-          </li>
-        </ul>
-        <ul class="docs-link-list">
-          <li><a class="mdl-color-text--grey-600" href="https://developers.google.com/web/starter-kit/">Web Starter Kit</a></li>
-          <li><a class="mdl-color-text--grey-600" href="https://github.com/google/material-design-lite/issues">Help</a></li>
-        </ul>
-		</footer>
-      
-	</body>
+<html lang="en">
+<!-- I am gonna develop my site from scratch by learning from sites and will 
+add my own css. Good Luck!! I need it. -->
+    <head>
+        <meta charset="utf-8">
+        <title>Girish Mururu</title>
+        <link rel="stylesheet" type="text/css" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <meta name="description" content="Girish Mururu">
+    </head>
+    <body>
+        <div class="header hidden-xs">
+            <div class="container">
+                <div class="gm-logo"><a href="/"></a></div>
+                <div class="extra-nav">
+                <ul>
+                    <li ><a class="fb-logo" href="https://www.facebook.com/mururugirish"></a></li>
+                    <li ><a class="twitter-logo" href="https://twitter.com/MuroorGirish"></a></li>
+                </ul>
+                </div>
+            </div>
+        </div>
+        <div class="container" id="primary-nav">
+            <nav>
+                <ul class="nav">
+                    <li><a class="active" href="#">Home</a></li>
+                    <!--<li><a href="html/projects.html">Projects</a></li>-->
+                    <li><a href="html/publications.html">Publications</a></li>
+                    <li><a href="assets/Girish_Mururu_CV.pdf">C.V.</a></li>
+                    <li><a href="http://shunyajnana.weebly.com/">Blog</a></li>
+                </ul>
+            </nav>
+        </div>
+        <!-- main content -->
+        <div class="container" id="main-content">
+            <div class="col">
+                <!--<img src="assets/dp1.png" width="160", height="200">-->
+                <img src="assets/self.jpg" width="200", height="156">
+            </div>
+            <div class="col">
+                <font size="+1">
+                    <strong>Girish Mururu</strong>
+                </font>
+                <br>PhD Student<br>
+                <a href="https://www.scs.gatech.edu/">School of Computer Science</a><br>
+                <a href="https://www.gatech.edu/">Georgia Institute of Technology</a>
+            </div>
+            <div class="col">
+                <br><b> Email: </b>girishmururu@gatech.edu
+                <br><b> Address: </b>Klaus Advanced Computing building
+                <br>#2337,
+                266 Ferst Dr NW
+                Atlanta
+                GA 30332
+            </div>
+            <div class="row">
+            </div>
+            <hr style="width: 100%; color: black; height: 1px; background_color: black;">
+            <h2>About Me</h2>
+            <div class="col">
+                I'm a graduate student pursuing PhD in computer science at Georgia Institute of Technology.
+                My advisor is Professor Santosh Pande. I am interested in Science in general and right now
+                my research is focussed on compilers, systems, parallel machines, and their interoperability.
+                Outside of academics, i like to travel, play sports, and watch anime.
+            </div>
+            <div class="row">
+            </div>
+            <hr style="width: 100%; color: black; height: 1px; background_color: black;">
+            <h3>Recent</h3>
+            <div class="col">
+                <li>
+                   Presented <b> Quantifying and Reducing Execution Variance in STM via
+                   Model Driven Commit Optimization</b> at <b> CGO 2019</b> in <b> Washington, D.C. </b>
+                </li>
+            </div>
+            <div class="row">
+            </div>
+            <!--<hr style="width: 100%; color: black; height: 1px; background_color: black;">
+            <a name="projects">
+                <h4>Projects</h4>
+            </a>
+            <div class="col">
+            </div>
+            <div class="row">
+            </div> -->
+        </div>
+    </body>
 </html>
