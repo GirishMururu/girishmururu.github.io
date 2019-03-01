@@ -111,6 +111,10 @@ a:-webkit-any-link {
     height: 30px;
 }
 
+@media screen and (max-width: 600px) {
+    .twitter-logo { display:none; }
+}
+
 #primary-nav {
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 5px 0px;
 }
@@ -141,8 +145,8 @@ ul.nav li a.active { background: #ECF3F2; }
     box-shadow: rgba(255, 255, 255, 0.15) 0px 1px 0px 0px inset, rgba(0, 0, 0, 0.075) 0px 1px 5px 0px;
     /*height: 100%;*/
     padding-bottom: 15px;
-    display: table;
-    /*display: flex;*/
+    /*display: table;
+    display: flex;*/
 }
 
 .col {
@@ -158,6 +162,24 @@ ul.nav li a.active { background: #ECF3F2; }
 .row {
     margin-right: -15px;
     margin-left: -15px;
+    box-sizing: border-box;
+}
+
+.container::before, .container::after, .row::before, .row::after{
+    display: table;
+    content: " ";
+}
+
+.container::after, .row::after{
+    clear: both;
+}
+
+hr {
+    margin-top: 20px;
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 1px solid #eee;
+    box-sizing: content-box;
 }
 
 h2, h3, h4{
@@ -167,28 +189,4 @@ h2, h3, h4{
     color: darkgreen;
     padding-left: 15px;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
